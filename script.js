@@ -19,7 +19,7 @@ let foundedItemsCount = [];
 const searchByInput = (value, pageNumber) => {
   item.innerHTML = '';
   loading.innerHTML = `<img src='gif1.gif' alt='Loading...' class='loading-gif' />`;
-  fetch(`http://openlibrary.org/search.json?q=${value}&page=${pageNumber}`)
+  fetch(`https://openlibrary.org/search.json?q=${value}&page=${pageNumber}`)
     .then(response => {
       console.log(response);
       console.log(typeof response);
