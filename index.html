@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Porc</title>
+  </head>
+  <body>
+      <h1 id="header-text">
+        <span class="colored-span">Reading</span> makes you smarter!!
+      </h1>
+      <div class="page-container">
+          <div class="page">
+              <div class="input-part">
+                  <input type="text" id="input" placeholder="Search a book" />
+                  <button class="search">Search</button>
+                  <button class="search">Clear</button>
+              </div>
+              <div id="pagination">
+                  <button class="pagination-btn">&larr;</button>
+                  <span class="pageNumber">1</span>
+                  <button class="pagination-btn">&rarr;</button>
+              </div>
+              <div class="loading"></div>
+              <div class="results-number"></div>
+              <div class="item-container"></div>
+          </div>
+      </div>
+  </body>
+</html>
