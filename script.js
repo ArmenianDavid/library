@@ -62,9 +62,10 @@ const searchByInput = (value, pageNumber) => {
 
 // Search buttons event listener it calls search by input value and page number
 search.addEventListener("click", () => {
+  if(input.value == false){return ''}
   pageNumber.innerHTML='1';
-  let inputStrind = input.value;
-  let replaced = inputStrind.replace(/' '/g, "+");
+  let inputString = input.value;
+  let replaced = inputString.replace(/' '/g, "+");
   let searchingPageNumber = pageNumber.innerHTML;
   console.log(pageNumber.innerHTML);
   console.log(replaced);
